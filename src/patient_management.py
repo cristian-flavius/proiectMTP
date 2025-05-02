@@ -216,11 +216,6 @@ class PatientManagementSystem:
         button_frame = ttk.Frame(main_frame)
         button_frame.pack(pady=10, fill=tk.X)
 
-        def logout(self) -> None:
-            """Log the user out and return to the login screen."""
-            self.logged_in = False
-            self.show_login_screen()
-
         # Butoane pentru acțiuni
         ttk.Button(button_frame, text="Adaugă Pacient", command=self.add_patient).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="Editează Pacient", command=self.edit_patient).pack(side=tk.LEFT, padx=5)
@@ -891,6 +886,11 @@ class PatientManagementSystem:
 
         ttk.Button(button_frame, text="Salvează", command=save_user).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="Anulează", command=add_window.destroy).pack(side=tk.LEFT, padx=5)
+
+    def logout(self) -> None:
+        #Deconectează utilizatorul şi revine la ecranul de autentificare.
+        self.logged_in = False
+        self.show_login_screen()
 
 
 if __name__ == "__main__":
