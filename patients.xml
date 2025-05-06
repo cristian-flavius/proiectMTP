@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<patients>
+    <patient>
+        <id>1</id>
+        <cnp>1900101123456</cnp>
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>45</varsta>
+        <telefon>0712345678</telefon>
+        <diagnostic>Hipertensiune</diagnostic>
+        <data_internare>2025-12-01</data_internare>
+    </patient>
+    <patient>
+        <id>2</id>
+        <cnp>2900202123456</cnp>
+        <nume>Ionescu</nume>
+        <prenume>Maria</prenume>
+        <varsta>36</varsta>
+        <telefon>0723456789</telefon>
+        <diagnostic>Diabet tip 2</diagnostic>
+        <data_internare>2025-12-02</data_internare>
+    </patient>
+    <patient>
+        <id>3</id>
+        <cnp>1900303123456</cnp>
+        <nume>Georgescu</nume>
+        <prenume>Andrei</prenume>
+        <varsta>52</varsta>
+        <telefon>0734567890</telefon>
+        <diagnostic>Pneumonie</diagnostic>
+        <data_internare>2025-12-03</data_internare>
+    </patient>
+    <patient>
+        <id>4</id>
+        <cnp>2900404123456</cnp>
+        <nume>Dumitrescu</nume>
+        <prenume>Ana</prenume>
+        <varsta>28</varsta>
+        <telefon>0745678901</telefon>
+        <diagnostic>SIBO</diagnostic>
+        <data_internare>2025-12-04</data_internare>
+    </patient>
+    <patient>
+        <id>5</id>
+        <cnp>1900505123456</cnp>
+        <nume>Popa</nume>
+        <prenume>Mihai</prenume>
+        <varsta>65</varsta>
+        <telefon>0756789012</telefon>
+        <diagnostic>Artrită</diagnostic>
+        <data_internare>2025-12-05</data_internare>
+    </patient>
+</patients>
