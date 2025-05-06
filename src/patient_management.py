@@ -9,7 +9,7 @@ from datetime import datetime
 class PatientManagementSystem:
     def __init__(self, root):
         self.root = root
-        self.root.title("Sistem de Gestiune a Pacienților pentru Clinică")
+        self.root.title("Sistem de Gestiune a Pacienților")
         self.root.geometry("800x600")
         self.root.resizable(True, True)
 
@@ -311,6 +311,9 @@ class PatientManagementSystem:
         def validate_date(P):
             if P == "":
                 return True
+            # Permite șiruri parțiale în timpul editării
+            if len(P) < 10:  # Dacă șirul este incomplet
+                return True
             pattern = re.compile(r'^\d{4}-\d{2}-\d{2}$')
             if pattern.match(P):
                 try:
@@ -500,6 +503,9 @@ class PatientManagementSystem:
 
             def validate_date(P):
                 if P == "":
+                    return True
+                # Permite șiruri parțiale în timpul editării
+                if len(P) < 10:  # Dacă șirul este incomplet
                     return True
                 pattern = re.compile(r'^\d{4}-\d{2}-\d{2}$')
                 if pattern.match(P):
